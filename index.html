@@ -610,14 +610,12 @@
                 
                 // You'll need to replace 'YOUR_GITHUB_USERNAME' and 'YOUR_REPO_NAME' with your actual values
                 // and create a GitHub Personal Access Token with repo permissions
-                const githubApiUrl = 'https://api.github.com/repos/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/issues';
+                const formspreeUrl = 'https://formspree.io/f/mvgqnrdk';
                 
-                fetch(githubApiUrl, {
+                fetch(formspreeUrl, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'Authorization': 'token YOUR_GITHUB_TOKEN', // Replace with your token
-                        'Accept': 'application/vnd.github.v3+json'
                     },
                     body: JSON.stringify(emailData)
                 })
