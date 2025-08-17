@@ -620,7 +620,6 @@
                     body: JSON.stringify(emailData)
                 })
                 .then(response => {
-                    console.log(response);
                     if (response.ok) {
                         // Success
                         button.textContent = 'Subscribed!';
