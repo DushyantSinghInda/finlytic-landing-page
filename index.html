@@ -510,7 +510,7 @@
                 </form>
             </div>
             
-            <div class="social-section">
+            <!-- <div class="social-section">
                 <h3 class="social-title">Follow Our Journey</h3>
                 <div class="social-links">
                     <a href="#" class="social-link" title="LinkedIn">💼</a>
@@ -518,7 +518,7 @@
                     <a href="#" class="social-link" title="GitHub">⚡</a>
                     <a href="#" class="social-link" title="Medium">📖</a>
                 </div>
-            </div>
+            </div> -->
             
             <p class="footer-text">&copy; 2025 Finlytics. All rights reserved.</p>
         </div>
@@ -620,6 +620,7 @@
                     body: JSON.stringify(emailData)
                 })
                 .then(response => {
+                    console.log(response);
                     if (response.ok) {
                         // Success
                         button.textContent = 'Subscribed!';
